@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins", sans-serif;
+    --azul: #002F52;
+    --cinza-claro: #F5F5F5;
+    --cinza-escuro: #333;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cinza-escuro);
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Cabeçalho */
+.cabeçalho {
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container__imagem {
+    width: 30px;
+    height: 30px;
+}
+
+.lista-menu {
+    display: flex;
+    list-style: none;
+}
+
+.lista-menu__titulo {
+    color: var(--branco);
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.lista-menu__item {
+    margin: 0 10px;
+}
+
+.lista-menu__link {
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Banner */
+.banner {
+    background-color: var(--azul-degrade);
+    color: var(--branco);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.banner__titulo {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.banner__texto {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.banner__pesquisa {
+    padding: 10px;
+    width: 50%;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Carrossel */
+.carrossel {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.carrossel__titulo {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.swiper {
+    margin-bottom: 30px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--branco);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card__descrição {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descrição__titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.descrição__titulo-livro {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.descrição__texto {
+    font-size: 16px;
+    color: var(--cinza-escuro);
+}
+
+.descrição__imagem {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.card__botões {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.botões__item {
+    margin-bottom: 10px;
+}
+
+.botões__ancora {
+    color: var(--laranja);
+    font-weight: 500;
+    text-align: right;
+}
+
+/* Tópicos */
+.tópicos {
+    padding: 50px 20px;
+    background-color: var(--cinza-claro);
+}
+
+.tópicos__titulo {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.tópicos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tópicos__item {
+    margin: 10px 20px;
+}
+
+.tópicos__link {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--azul);
+    transition: color 0.3s ease;
+}
+
+.tópicos__link:hover {
+    color: var(--laranja);
+}
+
+/* Contato */
+.contato {
+    padding: 50px 20px;
+    background-color: var(--azul-degrade);
+    color: var(--branco);
+    text-align: center;
+}
+
+.contato__titulo {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.contato__texto {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contato__email {
+    padding: 12px;
+    width: 60%;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Rodapé */
+.rodapé {
+    background-color: var(--azul);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.rodapé__titulo {
+    font-size: 20px;
+    font-weight: 400;
+}
